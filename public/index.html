@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+    <!-- Kontejner za početne inpute prilikom izbora proporcija za cigle -->
+    <div id="centerDiv">
+        <div id="inputContainer">
+            <label for="brojRedaka">Broj redaka:</label>
+            <input type="number" id="brojRedaka" value="6" min="1" max="13">
+            <label for="brojStupaca">Broj stupaca:</label>
+            <input type="number" id="brojStupaca" value="13" min="1" max="15">
+            <button id="startGameBtn">Pokreni Igru</button>
+        </div>
+    </div>
+    <!-- Stvorena komponenta canvas -->
+    <canvas id="myCanvas"></canvas>
+    <!-- Gumb za ponovnu igru -->
+    <button id="playAgainBtn" style="display: none;">Igraj Ponovno</button>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
